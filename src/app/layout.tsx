@@ -8,6 +8,7 @@ import "./globals.css";
 import { MotionConfig } from "framer-motion";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://dental-clinic-aoba.vercel.app'),
   title: {
     template: `%s | ${clinicInfo.name}`,
     default: `${clinicInfo.name} | 福岡市中央区今泉の歯科・矯正歯科`,
