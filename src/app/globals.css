@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  /* 配色設定 */
+  --color-white: #FFFFFF;
+  --color-base: #F7F9F8;
+  --color-primary: #1A4A44;
+  --color-text-main: #1F2A2E;
+  --color-text-sub: #5C6B70;
+  --color-border-light: #E5EBE9;
+
+  /* フォント設定（next/fontのCSS変数をマッピング） */
+  --font-sans: var(--font-noto-sans-jp), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-noto-serif-jp), ui-serif, Georgia, serif;
+  --font-en: var(--font-cormorant), ui-serif, Georgia, serif;
+
+  /* ブレイクポイントの拡張 */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* コンテンツ幅と余白の定義 */
+  --width-container: 1200px;
+  --width-content: 720px;
+
+  --spacing-section-sm: 56px;  /* SP時のセクション間隔 下限 */
+  --spacing-section-md: 72px;  /* SP時のセクション間隔 上限 */
+  --spacing-section-lg: 96px;  /* PC時のセクション間隔 下限 */
+  --spacing-section-xl: 128px; /* PC時のセクション間隔 上限 */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-base text-text-main font-sans leading-relaxed tracking-wide;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
