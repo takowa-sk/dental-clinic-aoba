@@ -158,7 +158,7 @@ export function ContactForm() {
           <div className="pt-6">
             <p className="text-xs text-text-sub text-center mb-6 leading-loose">
               送信いただいた情報は、お問い合わせへの回答および予約管理の目的以外には使用いたしません。<br />
-              弊社の「プライバシーポリシー」に同意の上、送信してください。
+              当院の「プライバシーポリシー」に同意の上、送信してください。
             </p>
             <Button
               type="submit"

@@ -72,7 +72,7 @@ export default function FirstVisitPage() {
         <SectionHeading en="First Visit" ja="初めての方へ" align="center" />
         <p className="mt-8 max-w-[var(--width-content)] mx-auto text-text-main text-center leading-loose">
           当院では、お口の悩みだけでなく、患者さまの背景やご要望を理解することを大切にしています。<br className="hidden md:block" />
-          「痛いところを治す」だけでなく「ずっと健康でいる」ための第一歩を、共に踏み出しましょう。
+          初回の検査とカウンセリングで現在の状態を可視化し、これからの通院ペースを一緒に決めていきます。
         </p>
       </section>
 

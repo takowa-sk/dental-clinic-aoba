@@ -16,14 +16,14 @@ const treatments = [
   {
     id: "pediatric",
     name: "小児歯科",
-    description: "お子さまが歯医者嫌いにならないよう、ペースに合わせた優しいケアを行います。",
+    description: "初回は治療の前に診療室に慣れる時間を設け、お子さまの様子を見ながら少しずつ進めます。",
     icon: Baby,
     href: "/treatments#pediatric",
   },
   {
     id: "preventive",
     name: "予防歯科",
-    description: "病気になる前の定期的なメンテナンスで、生涯ご自身の歯で過ごすサポートを。",
+    description: "病気になる前の定期的なメンテナンスで、毎日を快適に過ごせるお口の状態を保ちます。",
     icon: ShieldCheck,
     href: "/treatments#preventive",
   },

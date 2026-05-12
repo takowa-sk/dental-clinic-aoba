@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const equipments = [
   {
     name: "完全個室診療室",
-    description: "全診療室が個室または半個室となっており、プライバシーを完全に確保。周りの視線や治療音を気にせず、リラックスしてお話しいただけます。",
+    description: "全診療室を個室または半個室とし、プライバシーへの配慮を徹底。周りの視線や治療音を気にせず、リラックスしてお話しいただけます。",
     image: "/images/clinic-room.jpg",
   },
   {
@@ -77,7 +77,7 @@ export default function ClinicPage() {
         <div className="max-w-4xl mx-auto">
           <SectionHeading en="Hygiene & Safety" ja="徹底した感染対策" align="center" />
           <p className="mt-8 text-center text-text-main leading-loose mb-16">
-            当院では、患者さまに安心して治療を受けていただけるよう、目に見えない細菌やウイルスまで除去する世界水準の滅菌システムを構築しています。
+            当院では、患者さまに安心して治療を受けていただけるよう、ヨーロッパ規格クラスBの滅菌器を導入し、目に見えない細菌やウイルスまで除去する体制を整えています。
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -149,7 +149,7 @@ export default function ClinicPage() {
       {/* 医院理念 */}
       <section className="py-24 text-center">
         <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl italic text-text-main leading-relaxed max-w-4xl mx-auto">
-          「歯を治す場所から、一生の健康を育む場所へ」
+          「治療のために訪れる場所から、変化に気づくために通う場所へ」
         </blockquote>
         <p className="mt-8 text-text-sub text-sm tracking-[0.2em] uppercase">Aoba Dental Clinic Philosophy</p>
       </section>

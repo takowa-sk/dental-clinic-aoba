@@ -23,7 +23,7 @@ export function FirstVisitBanner() {
             <div>
               <h2 className="font-serif text-xl md:text-2xl font-bold mb-3">初めてご来院される方へ</h2>
               <p className="text-text-main text-sm md:text-base leading-relaxed">
-                当院は予約制となっております。初診の際は、検査・カウンセリングのため約60分のお時間をいただいております。<br className="hidden lg:block" />
+                当院は予約制となっております。初診の際は、検査・カウンセリングのため約60分から90分のお時間をいただいております。<br className="hidden lg:block" />
                 保険証とおくすり手帳をお持ちの上、ご予約時間の10分前にお越しください。
               </p>
             </div>

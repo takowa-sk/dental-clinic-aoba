@@ -23,7 +23,7 @@ export function Hero() {
           <span className="block">「行ってよかった」へ。</span>
         </h1>
         <p className="text-text-sub text-base sm:text-lg leading-relaxed mb-10 max-w-md">
-          私たちは、痛みを抑えた丁寧な治療と徹底した予防管理で、あなたとご家族の生涯の健康をサポートします。
+          私たちは、痛みを抑えた丁寧な治療と徹底した予防管理で、あなたとご家族の毎日の食事や会話をやさしく支えます。
         </p>
 
         {/* CTA Buttons */}
