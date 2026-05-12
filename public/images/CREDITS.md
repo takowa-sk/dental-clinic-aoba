@@ -13,3 +13,17 @@ This file lists the sources of the images used in this project. All images are d
 - `clinic-ct.jpg`: Photo by Unsplash - https://unsplash.com/photos/1579684385127-1ef15d508118
 - `clinic-counseling.jpg`: Photo by Unsplash - https://unsplash.com/photos/1497366216548-37526070297c
 - `clinic-powder.jpg`: Photo by Unsplash - https://unsplash.com/photos/1600585154340-be6161a56a0c
+
+### Section Images (Unsplash)
+
+- General Dentistry: https://unsplash.com/photos/Fdku_oMrDvk
+- Pediatric Dentistry: https://unsplash.com/photos/aFqSRokmw2E
+- Preventive Dentistry: https://unsplash.com/photos/oZKmP9VdvB0
+- Orthodontic: https://unsplash.com/photos/B9lLokDYTMY
+- Whitening: https://unsplash.com/photos/Azqe_Ism47Q
+- Implant: https://unsplash.com/photos/VxVO1zrY5F8
+- Private Room: https://unsplash.com/photos/I-kDEBUMAaQ
+- Counseling Room: https://unsplash.com/photos/ieDXimQcLeM
+- CT Scanner: https://unsplash.com/photos/DwlC4fija6o
+- Kids Space: https://unsplash.com/photos/CxE1H2_9B9s
+- Powder Room: https://unsplash.com/photos/OCbhwkrCams

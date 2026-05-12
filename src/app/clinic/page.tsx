@@ -13,7 +13,7 @@ const equipments = [
   {
     name: "完全個室診療室",
     description: "全診療室が個室または半個室となっており、プライバシーを完全に確保。周りの視線や治療音を気にせず、リラックスしてお話しいただけます。",
-    image: "/images/room.jpg",
+    image: "/images/clinic-room.jpg",
   },
   {
     name: "歯科用CT・デジタルレントゲン",
@@ -28,7 +28,7 @@ const equipments = [
   {
     name: "キッズスペース",
     description: "お子さま連れの方も安心して通えるよう、おもちゃや絵本を備えたキッズスペースをご用意。待ち時間も楽しくお過ごしいただけます。",
-    image: "/images/kids.jpg",
+    image: "/images/clinic-kids.jpg",
   },
   {
     name: "パウダールーム",
@@ -51,7 +51,7 @@ export default function ClinicPage() {
                 <div className="aspect-video relative rounded-[4px] overflow-hidden shadow-sm">
                   <Image
                     src={item.image}
-                    alt={item.name}
+                    alt={`${item.name}の様子`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"

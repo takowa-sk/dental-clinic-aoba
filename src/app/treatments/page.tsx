@@ -151,8 +151,8 @@ export default function TreatmentsPage() {
               <div className="flex-1 lg:max-w-md">
                 <div className="aspect-video lg:aspect-[4/5] relative rounded-[4px] overflow-hidden shadow-sm">
                   <Image
-                    src={`/images/${t.id === 'orthodontic' ? 'treatment-ortho' : 'treatment-gen'}.jpg`}
-                    alt={t.name}
+                    src={`/images/treatment-${t.id}.jpg`}
+                    alt={`${t.name}の診療イメージ`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 33vw"
