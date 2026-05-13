@@ -20,10 +20,10 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="text-center py-12 sm:py-24">
+      <div className="text-center py-12 sm:py-24" role="status" aria-live="polite">
         <div className="flex flex-col items-center gap-6 max-w-md mx-auto">
           <CheckCircle2 className="w-16 h-16 text-primary" />
-          <h1 className="font-serif text-3xl font-bold">送信が完了しました</h1>
+          <h2 className="font-serif text-3xl font-bold">送信が完了しました</h2>
           <p className="text-text-main leading-loose">
             お問い合わせいただきありがとうございます。内容を確認の上、1〜2営業日以内にスタッフよりお電話またはメールにてご連絡差し上げます。
           </p>
@@ -77,6 +77,7 @@ export function ContactForm() {
                 id="name"
                 name="name"
                 type="text"
+                autoComplete="name"
                 placeholder="例：山田 太郎"
                 className="w-full border-b border-border-light focus:border-primary outline-none py-2 text-sm transition-colors"
               />
@@ -90,6 +91,7 @@ export function ContactForm() {
                 id="kana"
                 name="kana"
                 type="text"
+                autoComplete="off"
                 placeholder="例：ヤマダ タロウ"
                 className="w-full border-b border-border-light focus:border-primary outline-none py-2 text-sm transition-colors"
               />
@@ -106,7 +108,9 @@ export function ContactForm() {
                 id="tel"
                 name="tel"
                 type="tel"
-                placeholder="例：09000000000"
+                inputMode="tel"
+                autoComplete="tel"
+                placeholder="例：090-0000-0000"
                 className="w-full border-b border-border-light focus:border-primary outline-none py-2 text-sm transition-colors"
               />
             </div>
@@ -119,16 +123,17 @@ export function ContactForm() {
                 id="email"
                 name="email"
                 type="email"
+                autoComplete="email"
                 placeholder="例：sample@example.com"
                 className="w-full border-b border-border-light focus:border-primary outline-none py-2 text-sm transition-colors"
               />
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="text-sm font-bold flex items-center gap-2">
+          <fieldset className="space-y-2">
+            <legend className="text-sm font-bold flex items-center gap-2">
               来院区分 <span className="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded">必須</span>
-            </label>
+            </legend>
             <div className="flex gap-6 pt-2">
               <label className="flex items-center gap-2 cursor-pointer text-sm">
                 <input type="radio" name="type" value="first" required className="accent-primary" />
@@ -139,7 +144,7 @@ export function ContactForm() {
                 通院したことがある（再診）
               </label>
             </div>
-          </div>
+          </fieldset>
 
           <div className="space-y-2">
             <label className="text-sm font-bold flex items-center gap-2" htmlFor="content">
@@ -156,10 +161,29 @@ export function ContactForm() {
           </div>
 
           <div className="pt-6">
-            <p className="text-xs text-text-sub text-center mb-6 leading-loose">
-              送信いただいた情報は、お問い合わせへの回答および予約管理の目的以外には使用いたしません。<br />
-              当院の「プライバシーポリシー」に同意の上、送信してください。
+            <p className="text-xs text-text-sub text-center mb-4 leading-loose">
+              送信いただいた情報は、お問い合わせへの回答および予約管理の目的以外には使用いたしません。
             </p>
+            <label className="flex items-start justify-center gap-2 mb-6 cursor-pointer text-sm text-text-main">
+              <input
+                type="checkbox"
+                name="privacyConsent"
+                required
+                className="mt-1 accent-primary"
+              />
+              <span>
+                当院の
+                <Link
+                  href="/privacy-policy"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-primary underline underline-offset-2 hover:opacity-80 mx-1"
+                >
+                  プライバシーポリシー
+                </Link>
+                に同意します <span className="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded">必須</span>
+              </span>
+            </label>
             <Button
               type="submit"
               className="w-full h-16 text-lg font-bold"

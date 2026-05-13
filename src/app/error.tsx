@@ -21,7 +21,7 @@ export default function Error({
       <div className="bg-red-50 p-8 rounded-full mb-8">
         <AlertTriangle className="w-16 h-16 text-red-400" />
       </div>
-      <h1 className="font-serif text-3xl md:text-4xl font-bold mb-4">Application Error</h1>
+      <h1 className="font-serif text-3xl md:text-4xl font-bold mb-4">エラーが発生しました</h1>
       <p className="text-text-sub mb-10 max-w-md mx-auto leading-loose">
         申し訳ありません。システムエラーが発生しました。<br />
         時間を置いてもう一度お試しいただくか、トップページにお戻りください。

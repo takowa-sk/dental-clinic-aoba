@@ -6,7 +6,8 @@ import { MapPin, Train, Car, Bus, HelpCircle, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "アクセス・診療時間",
-  description: "あおば歯科・矯正歯科へのアクセス方法と診療時間のご案内。天神南駅徒歩3分、西鉄天神駅徒歩6分。提携駐車場も2台分ございます。",
+  description: "あおば歯科・矯正歯科のアクセス・診療時間。地下鉄七隈線「天神南駅」徒歩3分、西鉄福岡（天神）駅徒歩6分。提携駐車場2台分・コインパーキング利用補助あり。診療時間：平日10:00-19:00、土曜10:00-17:00（昼休みあり）。",
+  alternates: { canonical: "/access" },
 };
 
 export default function AccessPage() {
@@ -15,7 +16,7 @@ export default function AccessPage() {
       <Breadcrumb items={[{ label: "アクセス" }]} />
 
       <section className="py-12 md:py-16">
-        <SectionHeading en="Access & Hours" ja="アクセス・診療時間" align="center" />
+        <SectionHeading en="Access & Hours" ja="アクセス・診療時間" align="center" level={1} />
       </section>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">

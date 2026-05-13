@@ -6,7 +6,8 @@ import { Check, Clock, Coins } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "診療メニュー",
-  description: "あおば歯科・矯正歯科の診療メニュー一覧。一般歯科から矯正、インプラントまで、痛みに配慮した丁寧な治療を提供します。",
+  description: "あおば歯科・矯正歯科の診療メニュー。一般歯科・小児歯科・予防歯科・矯正歯科・ホワイトニング・インプラントの6分野に対応。各治療の対象・流れ・料金目安を掲載し、治療開始前には書面で計画と概算費用をお渡しします。",
+  alternates: { canonical: "/treatments" },
 };
 
 const treatments = [
@@ -78,7 +79,7 @@ export default function TreatmentsPage() {
       <Breadcrumb items={[{ label: "診療メニュー" }]} />
       
       <section className="py-12 md:py-16">
-        <SectionHeading en="Treatments" ja="診療メニュー" align="center" />
+        <SectionHeading en="Treatments" ja="診療メニュー" align="center" level={1} />
         <p className="mt-8 max-w-[var(--width-content)] mx-auto text-text-main text-center leading-loose">
           あおば歯科・矯正歯科では、一般的な保険診療から自由診療まで幅広く対応しております。
           診療開始前に検査結果と治療計画・概算費用を書面でお渡しし、複数の選択肢から納得して進めていただける形を基本としています。
@@ -94,7 +95,7 @@ export default function TreatmentsPage() {
                   <span className="font-en italic text-primary text-xl">{t.en}</span>
                   <div className="h-px bg-primary/30 flex-grow" />
                 </div>
-                <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">{t.name}</h2>
+                <h3 className="font-serif text-3xl md:text-4xl font-bold mb-6">{t.name}</h3>
                 <p className="text-text-main leading-loose mb-8">
                   {t.description}
                 </p>
@@ -151,7 +152,7 @@ export default function TreatmentsPage() {
               <div className="flex-1 lg:max-w-md">
                 <div className="aspect-video lg:aspect-[4/5] relative rounded-[4px] overflow-hidden shadow-sm">
                   <Image
-                    src={`/images/treatment-${t.id}.jpg`}
+                    src={`/images/treatment-${t.id}.webp`}
                     alt={`${t.name}の診療イメージ`}
                     fill
                     className="object-cover"

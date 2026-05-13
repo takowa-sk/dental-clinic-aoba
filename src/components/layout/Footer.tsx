@@ -111,10 +111,10 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {clinicInfo.name} All Rights Reserved.
           </p>
           <div className="flex gap-4 text-xs text-text-sub">
-            <Link href="#" className="hover:text-primary transition-colors">
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">
               プライバシーポリシー
             </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
+            <Link href="/sitemap-html" className="hover:text-primary transition-colors">
               サイトマップ
             </Link>
           </div>

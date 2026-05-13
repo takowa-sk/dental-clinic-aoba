@@ -6,34 +6,35 @@ import { ShieldAlert, Sparkles, UserCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "医院紹介・設備",
-  description: "あおば歯科・矯正歯科の院内設備と、徹底した感染対策の取り組みについてご紹介します。リラックスできる完全個室の診療環境を整えています。",
+  description: "あおば歯科・矯正歯科の院内設備・感染対策。個室・半個室の診療室、歯科用CT、カウンセリングルーム、キッズスペース、パウダールームをご紹介。クラスB滅菌器の導入や使い捨ての徹底など、感染対策の取り組みもお伝えします。",
+  alternates: { canonical: "/clinic" },
 };
 
 const equipments = [
   {
     name: "完全個室診療室",
     description: "全診療室を個室または半個室とし、プライバシーへの配慮を徹底。周りの視線や治療音を気にせず、リラックスしてお話しいただけます。",
-    image: "/images/clinic-room.jpg",
+    image: "/images/clinic-room.webp",
   },
   {
     name: "歯科用CT・デジタルレントゲン",
     description: "従来のレントゲンでは把握できなかった顎の骨の立体的な構造や、神経・血管の位置を精密に診断。安全性の高い治療に不可欠な設備です。",
-    image: "/images/clinic-ct.jpg",
+    image: "/images/clinic-ct.webp",
   },
   {
     name: "カウンセリングルーム",
     description: "治療計画や費用のことなど、落ち着いてご相談いただける専用ルームを完備。モニターを使って視覚的に分かりやすくご説明します。",
-    image: "/images/clinic-counseling.jpg",
+    image: "/images/clinic-counseling.webp",
   },
   {
     name: "キッズスペース",
     description: "お子さま連れの方も安心して通えるよう、おもちゃや絵本を備えたキッズスペースをご用意。待ち時間も楽しくお過ごしいただけます。",
-    image: "/images/clinic-kids.jpg",
+    image: "/images/clinic-kids.webp",
   },
   {
     name: "パウダールーム",
     description: "診療前後のブラッシングや、お化粧直しにご利用いただける清潔な空間です。明るく使いやすい設計にこだわりました。",
-    image: "/images/clinic-powder.jpg",
+    image: "/images/clinic-powder.webp",
   },
 ];
 
@@ -43,7 +44,7 @@ export default function ClinicPage() {
       <Breadcrumb items={[{ label: "医院紹介・設備" }]} />
 
       <section className="py-12 md:py-16">
-        <SectionHeading en="Clinic Tour" ja="院内紹介・設備" align="center" />
+        <SectionHeading en="Clinic Tour" ja="院内紹介・設備" align="center" level={1} />
         <div className="mt-12 space-y-24">
           {equipments.map((item, i) => (
             <div key={i} className={`flex flex-col ${i % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-10 lg:gap-20 items-center`}>

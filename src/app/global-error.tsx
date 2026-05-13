@@ -21,7 +21,7 @@ export default function GlobalError({
           <div className="bg-red-50 p-8 rounded-full mb-8">
             <AlertTriangle className="w-16 h-16 text-red-500" />
           </div>
-          <h1 className="text-3xl font-bold mb-4 font-serif">Critical System Error</h1>
+          <h1 className="text-3xl font-bold mb-4 font-serif">システムエラーが発生しました</h1>
           <p className="text-text-sub mb-10 max-w-md mx-auto leading-loose text-sm">
             致命的なエラーが発生しました。アプリケーションを再起動してください。
           </p>

@@ -5,7 +5,8 @@ import { HelpCircle, ChevronDown } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "初診の方へ",
-  description: "あおば歯科・矯正歯科への初めてのご来院について。当日の流れ、お持ちいただくもの、よくあるご質問をご案内しています。",
+  description: "あおば歯科・矯正歯科の初診案内。受付・カウンセリング・検査・治療計画のご説明まで当日の流れと所要時間（約60〜90分）、お持ちいただくもの、お支払い方法、駐車場、よくあるご質問まで初めての方の疑問にお答えします。",
+  alternates: { canonical: "/first-visit" },
 };
 
 const steps = [
@@ -69,7 +70,7 @@ export default function FirstVisitPage() {
       <Breadcrumb items={[{ label: "初診の方へ" }]} />
 
       <section className="py-12 md:py-16">
-        <SectionHeading en="First Visit" ja="初めての方へ" align="center" />
+        <SectionHeading en="First Visit" ja="初めての方へ" align="center" level={1} />
         <p className="mt-8 max-w-[var(--width-content)] mx-auto text-text-main text-center leading-loose">
           当院では、お口の悩みだけでなく、患者さまの背景やご要望を理解することを大切にしています。<br className="hidden md:block" />
           初回の検査とカウンセリングで現在の状態を可視化し、これからの通院ペースを一緒に決めていきます。
